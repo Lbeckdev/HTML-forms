@@ -10,6 +10,10 @@
         <meta name="author" content="Lukas Beck">
         <meta name="description" content="HTML form with login,register and contact form">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
         <style>
             
             html {
@@ -21,14 +25,75 @@
                 height: 100%;
                 width: 100%;
                 margin: 0;
+                background-color: rgb(20, 15, 14);
+                font-family: 'Source Sans 3', sans-serif;               
                 }
 
             #landing_frame {
                 width: 100vw;
                 height: 100vh;
-                border: 1px solid red;
                 background-image: url("bckground_image-landing.svg");
                 background-size: 100% 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+            #login_frame {
+                width: 400px;
+                height: 450px;
+                background-color: rgb(21, 17, 14);
+                border-radius: 6px;
+                border: 0.3px solid rgb(179, 124, 20);
+                margin-bottom: 200px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+                }
+
+            #title_frame {
+                grid-area: 1/auto/2/auto;
+                border: 1px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: orange;
+                font-weight: 500;
+                font-size: 20px;
+                }
+            
+            #inputframe_1 {
+                grid-area: 2/auto/3/auto;
+                border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                }
+
+            #inputframe_2 {
+                grid-area: 3/auto/4/auto;
+                border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                }
+
+            .inputframe {
+                height: 100%;
+                width: 70%;
+                border: 1px solid yellow;
+                display: flex;
+                flex-direction: column;
+                }
+
+            #inputframe_3 {
+                grid-area: 4/auto/5/auto;
+                border: 1px solid red;
+                }
+
+            .input_label {
+                color: white;
                 }
 
            
@@ -42,6 +107,29 @@
 
         <div id="landing_frame">
 
+            <div id="login_frame">
+
+                <div id="title_frame">
+                    <span> Sign in to your account </span>
+                </div>
+
+                <div id="inputframe_1">
+                    <div class="inputframe">
+                        <label for="" class="input_label"> Email or username </label>
+                        <input type="email" id="username_input" class="user_input">
+                    </div>
+                </div>
+
+                <div id="inputframe_2">
+                    <div class="inputframe">
+                        <label for="" class="input_label"> Password </label>
+                        <input type="password" id="password_input" class="user_input">
+                    </div>
+                </div>
+
+                <div id="inputframe_3">
+                </div>
+            </div>
 
         </div>
 
