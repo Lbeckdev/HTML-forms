@@ -42,9 +42,9 @@
             #login_frame {
                 width: 400px;
                 height: 450px;
-                background-color: rgb(21, 17, 14);
+                background-color: rgb(15, 11, 10);
                 border-radius: 6px;
-                border: 0.3px solid rgb(179, 124, 20);
+                border: 0.5px solid rgb(210, 105, 25);
                 margin-bottom: 200px;
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr 1fr 50px;
@@ -52,48 +52,89 @@
 
             #title_frame {
                 grid-area: 1/auto/2/auto;
-                border: 1px solid red;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: orange;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 20px;
                 }
             
             #inputframe_1 {
                 grid-area: 2/auto/3/auto;
-                border: 1px solid red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                }
+
+            #inputframe-username {
+                height: 100%;
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 }
 
             #inputframe_2 {
                 grid-area: 3/auto/4/auto;
-                border: 1px solid red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 }
 
-            .inputframe {
+            #inputframe-password {
                 height: 100%;
-                width: 70%;
-                border: 1px solid yellow;
+                width: 75%;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-start;
                 }
+
+            
 
             #inputframe_3 {
                 grid-area: 4/auto/5/auto;
-                border: 1px solid red;
                 }
 
-            .input_label {
-                color: white;
+            #username_label {
+                color: rgb(223, 205, 180);
+                margin-bottom: 2.5px;
+                margin-left: 4px;
+                font-weight: 500;
+                }
+            
+            #password_label {
+                margin-top: 5px;
+                margin-bottom: 2.5px;
+                margin-left: 4px;
+                color: rgb(223,205,180);
+                font-weight: 500;
+                }
+
+            .user_input {
+                font-family: 'Source Sans 3', sans-serif;
+                font-size: 16px;                
+                width: auto;
+                height: 33%;
+                text-decoration: none;
+                background-color: black;
+                border: 0.5px solid rgb(179, 89, 20);
+                background-color: rgb(29, 19, 11);
+                border-radius: 4px;
+                outline: none;
+                color: rgb(223,205,180);
+                padding-left: 10px;
+                }
+
+            .user_input:hover {
+                border: 0.5px solid rgb(255, 145, 60);
+                }
+
+            .user_input:focus {
+                border: 1.3px solid rgb(250, 137, 51);
+                background-color: rgb(14, 9, 3);
                 }
 
            
@@ -114,15 +155,15 @@
                 </div>
 
                 <div id="inputframe_1">
-                    <div class="inputframe">
-                        <label for="" class="input_label"> Email or username </label>
+                    <div id="inputframe-username">
+                        <label for="username_input" id="username_label"> Email or username </label>
                         <input type="email" id="username_input" class="user_input">
                     </div>
                 </div>
 
                 <div id="inputframe_2">
-                    <div class="inputframe">
-                        <label for="" class="input_label"> Password </label>
+                    <div id="inputframe-password">
+                        <label for="password_input" id="password_label"> Password </label>
                         <input type="password" id="password_input" class="user_input">
                     </div>
                 </div>
