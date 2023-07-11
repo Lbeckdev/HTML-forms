@@ -12,7 +12,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
         <style>
             
@@ -26,8 +26,8 @@
                 width: 100%;
                 margin: 0;
                 background-color: rgb(20, 15, 14);
-                font-family: 'Source Sans 3', sans-serif;               
-                }
+                font-family: 'Red Hat Text', sans-serif;                
+            }
 
             #landing_frame {
                 width: 100vw;
@@ -92,9 +92,55 @@
                 justify-content: flex-start;
                 }
 
+            #password_extraframe {
+                height: 28px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                }
+
+            #pw_extraframe-left {
+                grid-area: 1/1/2/2;
+                display: flex;
+                align-items: center;
+                color: rgb(167, 143, 124);
+                font-size: 14.5px;
+                
+                }
+
+            #remember_me {
+                margin-left: 1px;
+                }  
+
+            #pw_extraframe-right {
+                grid-area: 1/2/2/3;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end; 
+                color: rgb(167, 143, 124);
+                font-size: 14.5px;
+                }
+
+            #pw_extraframe-right a {
+                text-decoration: none;
+                }
+
+            #pw_extraframe-right a:link {
+                color: rgb(167, 143, 124);
+                }
+                
+            #pw_extraframe-right a:visited {
+            color: rgb(167, 143, 124);
+            }
+            
+            #pw_extraframe-right a:hover {
+            color: rgb(233, 201, 174);
+            }
+
             
 
             #inputframe_3 {
+                border: 1px solid rgb(219, 129, 129);
                 grid-area: 4/auto/5/auto;
                 }
 
@@ -114,7 +160,7 @@
                 }
 
             .user_input {
-                font-family: 'Source Sans 3', sans-serif;
+                font-family: 'Red Hat Text', sans-serif;                
                 font-size: 16px;                
                 width: auto;
                 height: 33%;
@@ -138,7 +184,7 @@
                 }
 
            
-                
+          
             
         </style>
 
@@ -165,6 +211,15 @@
                     <div id="inputframe-password">
                         <label for="password_input" id="password_label"> Password </label>
                         <input type="password" id="password_input" class="user_input">
+                        <div id="password_extraframe">
+                            <div id="pw_extraframe-left"> 
+                                <input type="checkbox" id="remember_me" checked="checked">
+                                <label for="remember_me"> Remember me </label>
+                            </div>
+                            <div id="pw_extraframe-right">
+                                <a href=""> Forgot password? </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
