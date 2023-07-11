@@ -42,7 +42,7 @@
             #login_frame {
                 width: 400px;
                 height: 450px;
-                background-color: rgb(15, 11, 10);
+                background-color: rgb(19, 14, 12);
                 border-radius: 6px;
                 border: 0.5px solid rgb(210, 105, 25);
                 margin-bottom: 200px;
@@ -140,8 +140,26 @@
             
 
             #inputframe_3 {
-                border: 1px solid rgb(219, 129, 129);
                 grid-area: 4/auto/5/auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            #inputframe_3 input {
+                width: 200px;
+                height: 30px;
+                background-image: linear-gradient(to top right, rgb(163, 93, 0), rgb(30, 15, 2));
+                border: 1px solid rgb(175, 91, 1);
+                color: rgb(221, 213, 205);
+                font-size: 16px;
+                font-weight: 600px;
+                border-radius: 4px;
+                }
+
+            #inputframe_3 input:hover {
+                background-image: linear-gradient(to top right, rgb(238, 136, 3), rgb(97, 47, 2));
+                cursor: pointer;
                 }
 
             #username_label {
@@ -149,6 +167,7 @@
                 margin-bottom: 2.5px;
                 margin-left: 4px;
                 font-weight: 500;
+                font-size: 16px;
                 }
             
             #password_label {
@@ -157,6 +176,7 @@
                 margin-left: 4px;
                 color: rgb(223,205,180);
                 font-weight: 500;
+                font-size: 16px;
                 }
 
             .user_input {
@@ -194,7 +214,7 @@
 
         <div id="landing_frame">
 
-            <div id="login_frame">
+            <form action="" method="post" id="login_frame">
 
                 <div id="title_frame">
                     <span> Sign in to your account </span>
@@ -224,8 +244,9 @@
                 </div>
 
                 <div id="inputframe_3">
+                    <input type="submit" value="Sign in">
                 </div>
-            </div>
+            </form>
 
         </div>
 
