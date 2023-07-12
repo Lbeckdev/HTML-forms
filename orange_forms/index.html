@@ -12,7 +12,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
         <style>
             
@@ -26,7 +26,7 @@
                 width: 100%;
                 margin: 0;
                 background-color: rgb(20, 15, 14);
-                font-family: 'Red Hat Text', sans-serif;                
+                font-family: 'IBM Plex Sans', sans-serif;               
             }
 
             #landing_frame {
@@ -144,6 +144,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border: 1px solid rgb(154, 20, 207);
                 }
 
             #inputframe_3 input {
@@ -160,6 +161,43 @@
             #inputframe_3 input:hover {
                 background-image: linear-gradient(to top right, rgb(238, 136, 3), rgb(97, 47, 2));
                 cursor: pointer;
+                }
+
+            #frame_bottom {
+                grid-area: 5/auto/6/auto;
+                border: 1px solid rgb(13, 167, 167);
+                color: white;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                }
+
+            #frame_bottom-window {
+                height: 100%;
+                width: 90%;
+                border: 1px solid orange;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: row;
+                gap: 20px;
+                font-size: 14.5px;
+                }
+            
+            #link-left {
+                text-decoration: none;
+                }
+
+            a#link-left:link {
+                color: rgb(223, 205, 180);
+                }
+
+            a#link-left:visited {
+                color: rgb(223, 205, 180);
+                }
+
+            #link-right {
+                text-decoration: none;
                 }
 
             #username_label {
@@ -180,7 +218,7 @@
                 }
 
             .user_input {
-                font-family: 'Red Hat Text', sans-serif;                
+                font-family: 'IBM Plex Sans', sans-serif;               
                 font-size: 16px;                
                 width: auto;
                 height: 33%;
@@ -245,6 +283,13 @@
 
                 <div id="inputframe_3">
                     <input type="submit" value="Sign in">
+                </div>
+                
+                <div id="frame_bottom">
+                    <div id="frame_bottom-window">
+                        <a href="" id="link-left"> Don't have an account yet? </a>
+                        <a href="" id="link-right"> Sign up here </a>
+                    </div>
                 </div>
             </form>
 
