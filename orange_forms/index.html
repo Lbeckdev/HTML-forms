@@ -42,9 +42,9 @@
             #login_frame {
                 width: 400px;
                 height: 450px;
-                background-color: rgb(19, 14, 12);
+                background-color: rgb(15, 7, 5);
                 border-radius: 6px;
-                border: 0.5px solid rgb(210, 105, 25);
+                border: 0.5px solid rgb(90, 47, 14);
                 margin-bottom: 200px;
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr 1fr 50px;
@@ -104,7 +104,7 @@
                 display: flex;
                 align-items: center;
                 color: rgb(167, 143, 124);
-                font-size: 14.5px;
+                font-size: 13.5px;
                 
                 }
 
@@ -118,7 +118,7 @@
                 align-items: center;
                 justify-content: flex-end; 
                 color: rgb(167, 143, 124);
-                font-size: 14.5px;
+                font-size: 13.5px;
                 }
 
             #pw_extraframe-right a {
@@ -144,60 +144,70 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid rgb(154, 20, 207);
                 }
 
             #inputframe_3 input {
                 width: 200px;
                 height: 30px;
-                background-image: linear-gradient(to top right, rgb(163, 93, 0), rgb(30, 15, 2));
-                border: 1px solid rgb(175, 91, 1);
+                background-image: linear-gradient(to right, rgb(168, 113, 40), rgb(157, 50, 0));
                 color: rgb(221, 213, 205);
+                border: none;
                 font-size: 16px;
                 font-weight: 600px;
                 border-radius: 4px;
+                transition-duration: 0.3s;
                 }
 
             #inputframe_3 input:hover {
-                background-image: linear-gradient(to top right, rgb(238, 136, 3), rgb(97, 47, 2));
+                background-image: linear-gradient(to right, rgb(252, 168, 58), rgb(188, 39, 36));
                 cursor: pointer;
+                width: 250px;
                 }
+
 
             #frame_bottom {
                 grid-area: 5/auto/6/auto;
-                border: 1px solid rgb(13, 167, 167);
                 color: white;
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
                 }
 
-            #frame_bottom-window {
-                height: 100%;
+            #frame_bottom-window {  
+                height: 60%;
                 width: 90%;
-                border: 1px solid orange;
                 display: flex;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: center;
                 flex-direction: row;
-                gap: 20px;
+                gap: 9px;
                 font-size: 14.5px;
                 }
             
             #link-left {
                 text-decoration: none;
+                font-size: 13px;
                 }
 
             a#link-left:link {
-                color: rgb(223, 205, 180);
+                color: rgb(167, 143, 124);
                 }
 
             a#link-left:visited {
-                color: rgb(223, 205, 180);
+                color: rgb(167, 143, 124);
+                }
+
+            a#link-left:hover {
+                color: rgb(233, 201, 174);
+                }
+
+            a#link-left:active {
+                color: rgb(233, 201, 174);
                 }
 
             #link-right {
                 text-decoration: none;
+                font-size: 13px;
                 }
 
             #username_label {
@@ -223,9 +233,9 @@
                 width: auto;
                 height: 33%;
                 text-decoration: none;
+                border: none;
                 background-color: black;
-                border: 0.5px solid rgb(179, 89, 20);
-                background-color: rgb(29, 19, 11);
+                background-color: rgb(51, 30, 13);
                 border-radius: 4px;
                 outline: none;
                 color: rgb(223,205,180);
