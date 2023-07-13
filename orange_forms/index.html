@@ -105,12 +105,13 @@
                 align-items: center;
                 color: rgb(167, 143, 124);
                 font-size: 13.5px;
-                
+                position: relative;
+                border: 1px solid red;
                 }
 
-            #remember_me {
-                margin-left: 1px;
-                }  
+            
+
+            
 
             #pw_extraframe-right {
                 grid-area: 1/2/2/3;
@@ -184,25 +185,25 @@
                 font-size: 14.5px;
                 }
             
-            #link-left {
-                text-decoration: none;
+            #bottomtext-left {
+                color: rgb(167, 143, 124);
                 font-size: 13px;
                 }
 
-            a#link-left:link {
-                color: rgb(167, 143, 124);
+            a#link-right:link {
+                color: rgb(198, 118, 53);
                 }
 
-            a#link-left:visited {
-                color: rgb(167, 143, 124);
+            a#link-right:visited {
+                color: rgb(198, 118, 53);
                 }
 
-            a#link-left:hover {
-                color: rgb(233, 201, 174);
+            a#link-right:hover {
+                color: rgb(106, 64, 29);
                 }
 
-            a#link-left:active {
-                color: rgb(233, 201, 174);
+            a#link-right:active {
+                color: rgb(244, 141, 56);
                 }
 
             #link-right {
@@ -280,9 +281,8 @@
                         <label for="password_input" id="password_label"> Password </label>
                         <input type="password" id="password_input" class="user_input">
                         <div id="password_extraframe">
-                            <div id="pw_extraframe-left"> 
-                                <input type="checkbox" id="remember_me" checked="checked">
-                                <label for="remember_me"> Remember me </label>
+                            <div id="pw_extraframe-left">
+                                
                             </div>
                             <div id="pw_extraframe-right">
                                 <a href=""> Forgot password? </a>
@@ -297,7 +297,7 @@
                 
                 <div id="frame_bottom">
                     <div id="frame_bottom-window">
-                        <a href="" id="link-left"> Don't have an account yet? </a>
+                        <span id="bottomtext-left"> Don't have an account yet? </span>
                         <a href="" id="link-right"> Sign up here </a>
                     </div>
                 </div>
