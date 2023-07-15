@@ -109,9 +109,26 @@
                 border: 1px solid red;
                 }
 
+            #remember_me-container {
+                display: block;
+                position: relative;
+                padding-left: 30px;
+                line-height: 28px;
+                width: 100%;
+                height: 100%;
+                border: 1px solid yellow;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none; 
+                }
             
-
-            
+            #remember_me-container input {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                }
+ 
 
             #pw_extraframe-right {
                 grid-area: 1/2/2/3;
@@ -282,7 +299,9 @@
                         <input type="password" id="password_input" class="user_input">
                         <div id="password_extraframe">
                             <div id="pw_extraframe-left">
-                                
+                                <label id="remember_me-container">Remember me
+                                    <input type="checkbox" checked>
+                                </label>
                             </div>
                             <div id="pw_extraframe-right">
                                 <a href=""> Forgot password? </a>
