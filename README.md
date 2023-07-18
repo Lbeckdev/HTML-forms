@@ -5,5 +5,5 @@ I create my own designs for the forms by using Figma (design software).
 
 
 ## How to navigate in the repository
-I will be making several different html form projects in this repository. Each project will have its own named folder, and
+I will be making several different HTML form projects in this repository. Each project will have its own named folder, and
 you can access the projects and their content by clicking the folders (just like you would on your computer).
