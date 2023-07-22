@@ -10,7 +10,9 @@
         <meta name="author" content="Lukas Beck">
         <meta name="description" content="HTML form with login,register and contact form">
 
-        <link rel="stylesheet" href="https://use.typekit.net/cgi0xfe.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
         <style>
             
@@ -24,11 +26,15 @@
                 width: 100%;
                 margin: 0;
                 background-color: rgb(20, 15, 14);
-                font-family: 'acumin-pro', sans-serif;
+                font-family: 'Red Hat Text', sans-serif;
+                letter-spacing: -0.2px; 
                 }
 
+                
+
+
             input {
-                font-family: 'acumin-pro', sans-serif;
+                font-family: 'Red Hat Text', sans-serif;
                 }
 
            
@@ -43,6 +49,13 @@
                 align-items: center;
                 }
 
+            @media all and (max-width: 1600px), (max-height: 1200px) {
+                    #landing_frame {
+                        background-color: #161310;
+                        }
+                }
+
+            
             #login_frame {
                 width: 400px;
                 height: 450px;
@@ -245,7 +258,8 @@
             
             #bottomtext-left {
                 color: rgb(167, 143, 124);
-                font-size: 15px;
+                font-size: 14px;
+                font-weight: 500;
                 }
 
             a#link-right:link {
@@ -266,7 +280,7 @@
 
             #link-right {
                 text-decoration: none;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 600;
                 }
 
