@@ -10,7 +10,9 @@
         <meta name="author" content="Lukas Beck">
         <meta name="description" content="HTML form with login,register and contact form">
 
-        <link rel="stylesheet" href="https://use.typekit.net/cgi0xfe.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
 
 
@@ -26,8 +28,8 @@
                 width: 100%;
                 margin: 0;
                 background-color: rgb(20, 15, 14);
-                font-family: "jaf-bernino-sans", sans-serif;
-                letter-spacing: -0.2px;
+                font-family: 'Inter', sans-serif;                
+                letter-spacing: 0.1px;
                 word-spacing: 0px; 
                 }
 
@@ -35,7 +37,7 @@
 
 
             input {
-                font-family: "jaf-bernino-sans", sans-serif;
+                font-family: 'Inter', sans-serif;                
                 }
 
            
@@ -57,11 +59,17 @@
                 background-color: rgb(15, 7, 5);
                 border-radius: 6px;
                 border: 0.5px solid rgb(90, 47, 14);
-                margin-bottom: 200px;
+                margin-bottom: 15%;
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr 1fr 50px;
-                
                 }
+
+            @media all and (max-height: 850px) {
+                #login_frame {
+                    margin-bottom: 8%;
+                    }
+            }
+
 
             #title_frame {
                 grid-area: 1/auto/2/auto;
@@ -220,7 +228,7 @@
                 color: rgb(221, 213, 205);
                 border: none;
                 font-size: 16px;
-                font-weight: 600px;
+                font-weight: 600;
                 border-radius: 4px;
                 transition-duration: 0.3s;
                 }
@@ -229,6 +237,7 @@
                 background-image: linear-gradient(to right, rgb(252, 168, 58), rgb(188, 39, 36));
                 cursor: pointer;
                 width: 250px;
+                color: black;
                 }
 
 
@@ -253,7 +262,7 @@
             #bottomtext-left {
                 color: rgb(167, 143, 124);
                 font-size: 14px;
-                font-weight: 500;
+                font-weight: 600;
                 }
 
             a#link-right:link {
@@ -275,7 +284,7 @@
             #link-right {
                 text-decoration: none;
                 font-size: 14px;
-                font-weight: 600;
+                font-weight: 700;
                 }
 
             #username_label {
