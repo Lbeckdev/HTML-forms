@@ -45,6 +45,49 @@
                 background-color: #161310;
                 background-image: url("bckground_image-1.svg");
                 background-size: 100% 100%;
+                display: grid;
+                grid-template-rows: 60px 1fr;
+                }
+
+            #nav-bar {
+                grid-area: 1/auto/2/auto;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(15, 7, 5);
+                border-bottom: 0.5px solid rgb(90,47,14);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                gap: 70px;
+                }
+
+            #nav-bar a {
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: 600;
+                }
+
+            #nav-bar a:link {
+                color: orange;
+                }
+
+            #nav-bar a:visited {
+                color: orange;
+                }
+
+            #nav-bar a:hover {
+                text-decoration: overline;
+                text-decoration-thickness: 3px;
+                }
+
+            #nav-bar a:active {
+                color: orange;
+                }
+
+            
+            #main_content {
+                grid-area: 2/auto/3/auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -69,11 +112,6 @@
                     background-image: url("bckground_image-2.svg");
                     }
             }
-
-            
-
-
-
 
             #title_frame {
                 grid-area: 1/auto/2/auto;
@@ -377,49 +415,57 @@
 
         <div id="landing_frame">
 
-            <form action="" method="post" id="login_frame">
+            <div id="nav-bar">
+                <a href="Login_page.html"> Sign in </a>
+                <a href=""> Sign up </a>
+                <a href=""> Contact </a>         
+            </div>
 
-                <div id="title_frame">
-                    <span> Sign in to your account </span>
-                </div>
+            <div id="main_content">
 
-                <div id="inputframe_1">
-                    <div id="inputframe-username">
-                        <label for="username_input" id="username_label"> Email or username </label>
-                        <input type="email" id="username_input" class="user_input">
+                <form action="" method="post" id="login_frame">
+
+                    <div id="title_frame">
+                        <span> Sign in to your account </span>
                     </div>
-                </div>
 
-                <div id="inputframe_2">
-                    <div id="inputframe-password">
-                        <label for="password_input" id="password_label"> Password </label>
-                        <input type="password" id="password_input" class="user_input">
-                        <div id="password_extraframe">
-                            <div id="pw_extraframe-left">
-                                <label id="remember_me-container">Remember me
-                                    <input type="checkbox" checked>
-                                    <span id="custom-checkmark"> </span>
-                                </label>
-                            </div>
-                            <div id="pw_extraframe-right">
-                                <a href=""> Forgot password? </a>
+                    <div id="inputframe_1">
+                        <div id="inputframe-username">
+                            <label for="username_input" id="username_label"> Email or username </label>
+                            <input type="email" id="username_input" class="user_input">
+                        </div>
+                    </div>
+
+                    <div id="inputframe_2">
+                        <div id="inputframe-password">
+                            <label for="password_input" id="password_label"> Password </label>
+                            <input type="password" id="password_input" class="user_input">
+                            <div id="password_extraframe">
+                                <div id="pw_extraframe-left">
+                                    <label id="remember_me-container">Remember me
+                                        <input type="checkbox" checked>
+                                        <span id="custom-checkmark"> </span>
+                                    </label>
+                                </div>
+                                <div id="pw_extraframe-right">
+                                    <a href=""> Forgot password? </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="inputframe_3">
-                    <input type="submit" value="Sign in">
-                </div>
-                
-                <div id="frame_bottom">
-                    <div id="frame_bottom-window">
-                        <span id="bottomtext-left"> Don't have an account yet? </span>
-                        <a href="" id="link-right"> Sign up here </a>
+                    <div id="inputframe_3">
+                        <input type="submit" value="Sign in">
                     </div>
-                </div>
-            </form>
-
+                
+                    <div id="frame_bottom">
+                        <div id="frame_bottom-window">
+                            <span id="bottomtext-left"> Don't have an account yet? </span>
+                            <a href="" id="link-right"> Sign up here </a>
+                        </div>
+                    </div>
+                </form>
+            </div>    
         </div>
 
     </body>
