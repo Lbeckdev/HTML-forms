@@ -37,3 +37,11 @@ input {
 .nav-bar a:active {
     color: orange;
     }
+
+.main_content {
+    grid-area: 2/auto/3/auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid yellow;
+    }

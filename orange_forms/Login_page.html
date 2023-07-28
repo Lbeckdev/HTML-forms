@@ -42,13 +42,6 @@
                 display: grid;
                 grid-template-rows: 60px 1fr;
                 }
-            
-            #main_content {
-                grid-area: 2/auto/3/auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                }
      
             #login_frame {
                 width: 400px;
@@ -65,7 +58,7 @@
                 #login_frame {
                     margin-bottom: 8%;
                     }
-                #landing_frame {
+                #landing_login {
                     background-image: url("bckground_image-2.svg");
                     }
             }
@@ -351,7 +344,7 @@
                     }
                
 
-                #landing_frame {
+                #landing_login {
                     background-image: url("bckground_mobile.svg");
                     }
             }
@@ -375,12 +368,12 @@
             <div class="nav-bar">
                 <a href="Login_page.html"> Sign in </a>
                 <a href=""> Sign up </a>
-                <a href=""> Contact </a>         
+                <a href="Contact_page.html"> Contact </a>         
             </div>
 
-            <div id="main_content">
+            <div class="main_content">
 
-                <form action="" method="post" id="login_frame">
+                <form action="" method="post" id="login_frame" name="login frame">
 
                     <div id="title_frame">
                         <span> Sign in to your account </span>
