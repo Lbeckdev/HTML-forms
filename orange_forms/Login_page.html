@@ -11,6 +11,7 @@
         <meta name="description" content="Login form, Login page, html form">
 
         <link rel="stylesheet" href="https://use.typekit.net/cgi0xfe.css">
+        <link rel="stylesheet" href="styles.css">
 
 
         <style>
@@ -25,21 +26,14 @@
                 width: 100%;
                 margin: 0;
                 background-color: rgb(20, 15, 14);
-                font-family: "acumin-pro", sans-serif;           
+                font-family: 'myriad-pro', sans-serif;         
                 letter-spacing: 0.1px;
-                word-spacing: 0px; 
                 }
 
-                
-
-
-            input {
-                font-family: "acumin-pro", sans-serif;                 
-                }
 
            
 
-            #landing_frame {
+            #landing_login {
                 width: 100vw;
                 height: 100vh;
                 background-color: #161310;
@@ -48,43 +42,6 @@
                 display: grid;
                 grid-template-rows: 60px 1fr;
                 }
-
-            #nav-bar {
-                grid-area: 1/auto/2/auto;
-                width: 100%;
-                height: 100%;
-                background-color: rgb(15, 7, 5);
-                border-bottom: 0.5px solid rgb(90,47,14);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-                gap: 70px;
-                }
-
-            #nav-bar a {
-                text-decoration: none;
-                font-size: 17px;
-                font-weight: 600;
-                }
-
-            #nav-bar a:link {
-                color: orange;
-                }
-
-            #nav-bar a:visited {
-                color: orange;
-                }
-
-            #nav-bar a:hover {
-                text-decoration: overline;
-                text-decoration-thickness: 3px;
-                }
-
-            #nav-bar a:active {
-                color: orange;
-                }
-
             
             #main_content {
                 grid-area: 2/auto/3/auto;
@@ -413,9 +370,9 @@
 
     <body>
 
-        <div id="landing_frame">
+        <div id="landing_login">
 
-            <div id="nav-bar">
+            <div class="nav-bar">
                 <a href="Login_page.html"> Sign in </a>
                 <a href=""> Sign up </a>
                 <a href=""> Contact </a>         
