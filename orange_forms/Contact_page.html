@@ -34,6 +34,7 @@
             color: rgb(223, 205, 180);
             font-size: 17.5px;
             font-weight: 600;
+            margin-left: 3px;
             }
 
         #landing_contact {
@@ -57,7 +58,6 @@
             }
 
         #title_frame-contact {
-            border: 1px solid red;
             grid-area: 1/auto/2/auto;
             color: orange;
             font-weight: 700;
@@ -72,11 +72,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid red;
             }
         
         #inputframe_1-contact input {
-            width: 70%;
+            width: 69.5%;
             height: 30px;
             border-bottom: 0.5px solid rgb(255, 145, 60);
             background: none;
@@ -85,6 +84,7 @@
             border-right: none;
             color: rgb(223,205,180);
             font-size: 16.5px;
+            box-sizing: border-box;
             }
         
         #inputframe_1-contact input:focus {
@@ -103,16 +103,40 @@
 
         #inputframe_2-contact {
             grid-area: 3/auto/4/auto;
-            border: 1px solid green;
             display: flex;
             justify-content: center;
             align-items: center;
             }
 
         #message-frame {
-            border: 1px solid red;
             width: 70%;
             height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            }
+
+        #inputframe_2-contact label {
+            color: rgb(223,205,180);
+            font-size: 17.5px;
+            font-weight: 600;
+            margin-bottom: 5.5px;
+            margin-left: 3px;
+            }
+
+        #user_message {
+            resize: none;
+            width: 100%;
+            height: 80%;
+            background-color: transparent;
+            border: 0.5px solid rgb(255, 145, 60);
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+        #user_message:hover {
+            border: 2px solid rgb(255, 145, 60);
             }
 
     </style>
@@ -139,6 +163,8 @@
                     </div>
                     <div id="inputframe_2-contact">
                         <div id="message-frame">
+                            <label for="user_message"> Message </label>
+                            <textarea name="user-message" id="user_message"> </textarea> 
                         </div>
                     </div>
 
