@@ -57,6 +57,13 @@
             grid-template-rows: 70px 70px 1fr 1fr 1fr;
             }
 
+        @media all and (max-width: 1370px) and (max-height: 950px) {
+            #landing_contact {
+                background-image: url('Contact_bckground-1.svg');
+                }
+        }
+
+        
         #title_frame-contact {
             grid-area: 1/auto/2/auto;
             color: orange;
@@ -189,6 +196,21 @@
             font-size: 14.5px;
             padding-bottom: 11px;
             }
+
+        @media all and (max-width: 650px) and (max-height: 1100px) {
+            #landing_contact {
+                background-image: url('Contact_bckground-mobile.svg');
+                }
+        
+            #contact_frame {
+                width: 93%;
+                }
+            
+            #submit_frame input {
+                width: 150px;
+                }
+            }
+
 
     </style>
 
