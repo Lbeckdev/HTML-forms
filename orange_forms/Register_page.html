@@ -24,6 +24,66 @@
                 font-family: 'Nunito Sans', sans-serif;
                 border: 1px solid black;
                 }
+
+            #landing_register {
+                width: 100vw;
+                height: 100vh;
+                background-image: url('Register_bckground.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: grid;
+                grid-template-rows: 60px 1fr;
+                }
+
+            #register_frame {
+                height: 630px;
+                width: 500px;
+                background-color: rgb(15,7,5);
+                border-radius: 6px;
+                border: 0.5px solid rgb(90,47,14);
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                }
+
+            #inputframe1-reg {
+                grid-area: 2/auto/3/auto;
+                border: 1px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            #helpframe1-reg {
+                border: 1px solid yellow;
+                height: 100%;
+                width: 75%;
+                display: flex;
+                }
+            
+            #inputframe2-reg {
+                grid-area: 3/auto/4/auto;
+                border: 1px solid red;
+                }
+
+            #inputframe3-reg {
+                grid-area: 4/auto/5/auto;
+                border: 1px solid red;
+                }
+
+            #inputframe4-reg {
+                grid-area: 5/auto/6/auto;
+                border: 1px solid red;
+                }
+            
+            #submitframe-reg {
+                grid-area: 6/auto/7/auto;
+                border: 1px solid red;
+                }
+
+            #bottomframe-reg {
+                grid-area: 7/auto/8/auto;
+                border: 1px solid red;
+                }
             
 
         </style>
@@ -32,5 +92,41 @@
     </head>
 
     <body>
+
+        <div id="landing_register">
+            <div class="nav-bar">
+                <a href="Login_page.html"> Sign in </a>
+                <a href="Register_page.html"> Sign up </a>
+                <a href="Contact_page.html"> Contact </a>
+            </div>
+
+            <div class="main_content">
+
+                <form action="" method="post" id="register_frame" name="register form">
+                    <div class="title_frame">
+                    </div>
+                    <div id="inputframe1-reg">
+                        <div id="helpframe1-reg">
+                            
+                        </div>
+                    </div>
+                    <div id="inputframe2-reg">
+                    </div>
+                    <div id="inputframe3-reg">
+                    </div>
+                    <div id="inputframe4-reg">
+                    </div>
+                    <div id="submitframe-reg">
+                    </div>
+                    <div id="bottomframe-reg">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
     </body>
+
+
 </html>
