@@ -36,13 +36,13 @@
                 }
 
             #register_frame {
-                height: 630px;
+                height: 600px;
                 width: 400px;
                 background-color: rgb(15,7,5);
                 border-radius: 6px;
                 border: 0.5px solid rgb(90,47,14);
                 display: grid;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr;
                 }
 
             #inputframe1-reg {
@@ -86,7 +86,7 @@
                 }
 
             #register_username-label {
-                margin-top: 12px;
+                margin-top: 15px;
                 margin-left: 4px;
                 margin-bottom: 2.5px;
                 color: rgb(223,205,180);
@@ -128,7 +128,6 @@
                 
                 
             #submitframe-reg {
-                border: 1px solid red;
                 grid-area: 6/auto/7/auto;
                 display: flex;
                 justify-content: center;
@@ -141,12 +140,51 @@
                 background-image: linear-gradient(to right, rgb(168, 113, 40), rgb(157, 50, 0));
                 color: rgb(245,227,209);
                 border: none;
+                font-size: 17px;
+                font-weight: 600;
+                transition-duration: 0.3s;
+                border-radius: 4px;
+                }
+
+            #submitframe-reg input:hover {
+                width: 250px;
+                background-image: linear-gradient(to right, rgb(252, 168, 58), rgb(188, 39, 36));
+                cursor: pointer;
+                color: black;
                 }
 
             #bottomframe-reg {
-                border: 1px solid red;
                 grid-area: 7/auto/8/auto;
-                
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+                gap: 9px;
+                padding-bottom: 10px;
+                }
+
+            #bottomframe-reg span {
+                color: rgb(167, 143, 124);
+                font-size: 14px;
+                font-weight: 600;
+                }
+
+            #bottomframe-reg a {
+                font-size: 14px;
+                text-decoration: none;
+                font-weight: 700;
+                }
+
+            #bottomframe-reg a:link {
+                color: red;
+                }
+
+            #bottomframe-reg a:visited {
+                color: red;
+                }
+
+            #bottomframe-reg a:hover {
+                color: white;
                 }
 
             .register_input {
@@ -156,7 +194,7 @@
                 padding-left: 10px;
                 color: rgb(223,205,180);
                 width: 100%;
-                height: 36px;
+                height: 38.5px;
                 background-color: rgb(51,30,13);
                 border: none;
                 border-radius: 4px;
@@ -219,6 +257,8 @@
                         <input type="submit" value="Create account">
                     </div>
                     <div id="bottomframe-reg">
+                        <span> Already have an account? </span>
+                        <a href=""> Sign in </a>
                     </div>
 
                 </form>

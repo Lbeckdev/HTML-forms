@@ -49,7 +49,7 @@
                 border: 0.5px solid rgb(90, 47, 14);
                 margin-bottom: 15%;
                 display: grid;
-                grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+                grid-template-rows: 0.8fr 1fr 1fr 0.65fr 50px;
                 }
 
             @media all and (max-width: 1370px) and (max-height: 950px) {
@@ -198,7 +198,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
                 }
 
             #inputframe_3 input {
@@ -224,45 +223,36 @@
 
             #frame_bottom {
                 grid-area: 5/auto/6/auto;
-                color: white;
                 display: flex;
+                flex-direction: row;
+                gap: 9px;
                 align-items: flex-end;
                 justify-content: center;
                 }
 
-            #frame_bottom-window {  
-                height: 60%;
-                width: 90%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                gap: 9px;
-                }
-            
-            #bottomtext-left {
+            #frame_bottom span {
                 color: rgb(167, 143, 124);
                 font-size: 14px;
                 font-weight: 600;
                 }
 
-            a#link-right:link {
+            #frame_bottom a:link {
                 color: rgb(198, 118, 53);
                 }
 
-            a#link-right:visited {
+            #frame_bottom a:visited {
                 color: rgb(198, 118, 53);
                 }
 
-            a#link-right:hover {
+            #frame_bottom a:hover {
                 color: rgb(106, 64, 29);
                 }
 
-            a#link-right:active {
+            #frame_bottom a:active {
                 color: rgb(244, 141, 56);
                 }
 
-            #link-right {
+            #frame_bottom a {
                 text-decoration: none;
                 font-size: 14px;
                 font-weight: 700;
@@ -397,10 +387,9 @@
                     </div>
                 
                     <div id="frame_bottom">
-                        <div id="frame_bottom-window">
-                            <span id="bottomtext-left"> Don't have an account yet? </span>
-                            <a href="" id="link-right"> Sign up </a>
-                        </div>
+                        <span> Don't have an account yet
+                        </span>
+                        <a href=""> Sign up </a>
                     </div>
                 </form>
             </div>    
