@@ -130,7 +130,17 @@
             #submitframe-reg {
                 border: 1px solid red;
                 grid-area: 6/auto/7/auto;
-                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+            #submitframe-reg input {
+                width: 200px;
+                height: 30px;
+                background-image: linear-gradient(to right, rgb(168, 113, 40), rgb(157, 50, 0));
+                color: rgb(245,227,209);
+                border: none;
                 }
 
             #bottomframe-reg {
@@ -152,7 +162,14 @@
                 border-radius: 4px;
                 box-sizing: border-box;
                 }
+
+            ::placeholder {
+                color: rgb(141, 125, 106);
+                }
             
+            #user_pass:focus::placeholder {
+                color: transparent;
+                }
 
         </style>
 
@@ -199,6 +216,7 @@
                         </div>
                     </div>
                     <div id="submitframe-reg">
+                        <input type="submit" value="Create account">
                     </div>
                     <div id="bottomframe-reg">
                     </div>
