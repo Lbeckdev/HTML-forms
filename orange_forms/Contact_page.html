@@ -64,14 +64,14 @@
                     }
             }
         
-            #inputframe_1-contact {
+            #inputframe1-contact {
                 grid-area: 2/auto/3/auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 }
         
-            #inputframe_1-contact input {
+            #inputframe1-contact input {
                 width: 69.5%;
                 height: 30px;
                 border-bottom: 0.5px solid rgb(255, 145, 60);
@@ -84,21 +84,21 @@
                 box-sizing: border-box;
                 }
         
-            #inputframe_1-contact input:focus {
+            #inputframe1-contact input:focus {
                 outline: none;
                 border-bottom: 1px solid rgb(255, 145, 60);
                 }
 
-            #inputframe_1-contact input:hover {
+            #inputframe1-contact input:hover {
                 border-bottom: 2px solid rgb(255, 145, 60);
                 margin-bottom: -2px;
                 }
 
-            #inputframe_1-contact input:focus::placeholder {
+            #inputframe1-contact input:focus::placeholder {
                 color: transparent;
                 }
 
-            #inputframe_2-contact {
+            #inputframe2-contact {
                 grid-area: 3/auto/4/auto;
                 display: flex;
                 justify-content: center;
@@ -114,7 +114,7 @@
                 justify-content: flex-end;
                 }
 
-            #inputframe_2-contact label {
+            #inputframe2-contact label {
                 color: rgb(223,205,180);
                 font-size: 17.5px;
                 font-weight: 600;
@@ -177,14 +177,15 @@
                 background-image: linear-gradient(to right, rgb(252, 168, 58), rgb(188, 39, 36));
                 }
 
-            #bottom-frame {
+            #bottomframe-contact {
                 grid-area: 5/auto/6/auto;
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
                 color: rgb(151, 129, 112);
-                font-size: 14.5px;
-                padding-bottom: 11px;
+                font-size: 14px;
+                padding-bottom: 10px;
+                font-weight: 600;
                 }
 
             @media all and (max-width: 650px) and (max-height: 1100px) {
@@ -221,10 +222,10 @@
                     <div class="title_frame">
                         <span> Contact us </span>
                     </div>
-                    <div id="inputframe_1-contact">
+                    <div id="inputframe1-contact">
                         <input type="email" placeholder="Email">
                     </div>
-                    <div id="inputframe_2-contact">
+                    <div id="inputframe2-contact">
                         <div id="message-frame">
                             <label for="user_message"> Message </label>
                             <textarea name="user-message" id="user_message"> </textarea> 
@@ -234,7 +235,7 @@
                     <div id="submit_frame">
                         <input type="submit" value="Send">
                     </div>
-                    <div id="bottom-frame">
+                    <div id="bottomframe-contact">
                         We try to answer within 3 business days.
                     </div>
 
