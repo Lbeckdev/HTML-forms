@@ -22,15 +22,15 @@
                 width: 100%;
                 margin: 0px;
                 font-family: 'Nunito Sans', sans-serif;
-                border: 1px solid black;
+                
                 }
 
             #landing_register {
                 width: 100vw;
-                height: 100vh;
+                min-height: 100vh;
                 background-image: url('Register_bckground.svg');
                 background-size: cover;
-                background-repeat: no-repeat;
+                background-repeat: repeat;
                 display: grid;
                 grid-template-rows: 60px 1fr;
                 }
@@ -43,6 +43,12 @@
                 border: 0.5px solid rgb(90,47,14);
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr;
+                }
+
+            @media all and (max-width: 1370px) and (max-height: 950px) {
+                #register_frame {
+                    margin-top: 50px;
+                    }
                 }
 
             #inputframe1-reg {
@@ -85,7 +91,7 @@
                 flex-direction: column;
                 }
 
-            #register-label {
+            .register-label {
                 margin-top: 15px;
                 margin-left: 4px;
                 margin-bottom: 2.5px;
@@ -222,6 +228,41 @@
                 color: transparent;
                 }
 
+            @media all and (max-width: 1050px) and (max-height: 1380px) {
+                #register_frame {
+                    width: 600px;
+                    height: 800px;
+                    }
+
+                .register_input {
+                    height: 50px;
+                    font-size: 23px;
+                    }
+
+                #register_email-label {
+                    font-size: 24px;
+                    }
+
+                .register-label {
+                    font-size: 24px;
+                    }
+
+                ::placeholder {
+                    font-size: 23px;
+                    }
+
+                .title_frame {
+                    font-size: 32px;
+                    }
+
+                #submitframe-reg input {
+                    width: 270px;
+                    height: 45px;
+                    font-size: 25px;
+                    }
+
+                }
+
         </style>
 
 
@@ -250,19 +291,19 @@
                     </div>
                     <div id="inputframe2-reg">
                         <div id="helpframe2-reg">
-                            <label id="register-label" for="user_name"> Username </label>
+                            <label class="register-label" for="user_name"> Username </label>
                             <input type="text" id="user_name" class="register_input">
                         </div>
                     </div>
                     <div id="inputframe3-reg">
                         <div id="helpframe3-reg">
-                            <label id="register-label" for="user_pass"> Password </label>
+                            <label class="register-label" for="user_pass"> Password </label>
                             <input type="password" id="user_pass" class="register_input" placeholder="Create a password">
                         </div>
                     </div>
                     <div id="inputframe4-reg">
                         <div id="helpframe4-reg">
-                            <label id="register-label" for="confirm_pass"> Confirm password </label>
+                            <label class="register-label" for="confirm_pass"> Confirm password </label>
                             <input type="password" id="confirm_pass" class="register_input">
                         </div>
                     </div>
@@ -271,7 +312,7 @@
                     </div>
                     <div id="bottomframe-reg">
                         <span> Already have an account? </span>
-                        <a href=""> Sign in </a>
+                        <a href="Login_page.html"> Sign in </a>
                     </div>
 
                 </form>
