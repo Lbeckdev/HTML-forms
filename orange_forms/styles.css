@@ -38,6 +38,12 @@ input {
     color: orange;
     }
 
+@media all and (max-width: 1050px) and (max-height: 1380px) {
+    .nav-bar a {
+        font-size: 24.5px;
+        }
+    }
+
 .main_content {
     grid-area: 2/auto/3/auto;
     display: flex;

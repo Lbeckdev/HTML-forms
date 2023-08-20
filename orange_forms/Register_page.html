@@ -167,16 +167,17 @@
                 justify-content: center;
                 gap: 6px;
                 padding-bottom: 10px;
+                font-size: 14px;
                 }
 
             #bottomframe-reg span {
                 color: rgb(167, 143, 124);
-                font-size: 14px;
+               
                 font-weight: 600;
                 }
 
             #bottomframe-reg a {
-                font-size: 14px;
+                
                 text-decoration: none;
                 font-weight: 700;
                 }
@@ -261,7 +262,70 @@
                     font-size: 25px;
                     }
 
+                #bottomframe-reg {
+                    font-size: 22px;
+                    }
+
                 }
+            @media all and (max-width: 700px) {
+                #register_frame {
+                    width: 93%;
+                    }
+                }
+
+            @media all and (max-width: 500px) and (max-height: 950px) {
+                .title_frame {
+                    font-size: 26px;
+                    }
+            
+                #register_email-label {
+                    font-size: 19.5px;
+                    }
+
+                .register-label {
+                    font-size: 19.5px;
+                    }
+                    
+                ::placeholder {
+                    font-size: 18.5px;
+                    }
+
+                .register_input {
+                    font-size: 18.5px;
+                    }
+
+                #submitframe-reg input {
+                    font-size: 20px;
+                    }
+
+                #bottomframe-reg {
+                    font-size: 16.5px;
+                    }
+
+                .nav-bar a {
+                    font-size: 20px;
+                    }
+            }
+
+            @media all and (max-width: 380px) {
+                .nav-bar {
+                    gap: 50px;
+                    }
+                
+                .nav-bar a {
+                    font-size: 18px;
+                    }
+
+                #submitframe-reg input {
+                    width: 60%;
+                    }
+
+                #submitframe-reg input:hover {
+                    width: 75%;
+                    }
+                    
+            }
+            
 
         </style>
 
