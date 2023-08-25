@@ -32,11 +32,11 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: 25px;
+                gap: 15px;
                 }
 
             #return-home {
-                font-size: 18px;
+                font-size: 17px;
                 text-decoration: none;
                 font-weight: 600;
                 }
@@ -64,9 +64,9 @@
 
 
             #recoveryframe1 {
-                width: 530px;
-                height: 360px;
-                background-color: #0F0705;
+                width: 520px;
+                height: 310px;
+                background-color: rgb(26, 12, 9);
                 border-radius: 6px;
                 border: 1px solid #7A4319;
                 display: flex;
@@ -79,17 +79,56 @@
             #recovery-title {
                 color: orange;
                 font-weight: 700;
-                font-size: 21px;
+                font-size: 23px;
+                margin-top: -15px;
                 }
 
             #email-label {
-                font-size: 16.5px;
+                font-size: 17px;
                 font-weight: 600;
+                margin-bottom: -27px;
                 }
 
             #email-input {
-                width: 300px;
-                height: 38.5px;
+                width: 360px;
+                height: 37px;
+                background-color: rgb(51,30,13);
+                border: none;
+                border-radius: 4px;
+                box-sizing: border-box;
+                color: rgb(223,205,180);
+                font-size: 16px;
+                padding-left: 10px;
+                }
+
+            #email-input:hover {
+                border: 0.5px solid rgb(255,145,60);
+                }
+
+            #email-input:focus {
+                border: 1.3px solid rgb(250,137,51);
+                background-color: rgb(14,9,3);
+                outline: none;
+                }
+
+            #resetpass-btn {
+                width: 200px;
+                height: 30px;
+                font-size: 17px;
+                font-weight: 600;
+                border-radius: 4px;
+                background-image: linear-gradient(to right, rgb(168, 113, 40), rgb(157, 50, 0));
+                border: none;
+                color: rgb(245,227,209);
+                transition-duration: 0.3s;
+                margin-bottom: 10px;
+                }
+
+            #resetpass-btn:hover {
+                background-image: linear-gradient(to right, rgb(252, 168, 58), rgb(188, 39, 36));
+                width: 250px;
+                cursor: pointer;
+                color: black;
                 }
 
             #forgotemail-link {
@@ -129,7 +168,7 @@
                 <span id="recovery-title"> Recover your account </span>
                 <label for="email-input" id="email-label"> Email </label>
                 <input type="email" id="email-input">
-                <input type="submit" value="Reset password">
+                <input type="submit" value="Reset password" id="resetpass-btn">
                 <a href="" id="forgotemail-link"> I forgot my email </a> 
             </form>
         </div>    
