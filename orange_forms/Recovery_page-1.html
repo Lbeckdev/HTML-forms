@@ -32,12 +32,90 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                gap: 25px;
                 }
 
+            #return-home {
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 600;
+                }
+            #return-home:link {
+                color: orange;
+                }
+
+            #return-home:visited {
+                color: orange;
+                }
+
+            #return-home:focus {
+                color: rgb(255, 205, 111);
+                border: none;
+                outline: 2px solid orange;
+                }
+                
+            #return-home:hover {
+                color: rgb(154, 100, 0);
+                }
+
+            #return-home:active {
+                color: orange;
+                }
+
+
             #recoveryframe1 {
-                width: 500px;
-                height: 500px;
-                background-color: black;
+                width: 530px;
+                height: 360px;
+                background-color: #0F0705;
+                border-radius: 6px;
+                border: 1px solid #7A4319;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                }
+
+            #recovery-title {
+                color: orange;
+                font-weight: 700;
+                font-size: 21px;
+                }
+
+            #email-label {
+                font-size: 16.5px;
+                font-weight: 600;
+                }
+
+            #email-input {
+                width: 300px;
+                height: 38.5px;
+                }
+
+            #forgotemail-link {
+                font-size: 17px;
+                text-decoration: none;
+                font-weight: 600;
+                }
+
+            #forgotemail-link:link {
+                color: rgb(167, 143, 124);
+                }
+
+            #forgotemail-link:visited {
+                color: rgb(167, 143, 124);
+                }
+
+            #forgotemail-link:focus {
+                color: rgb(167, 143, 124);
+                }
+
+            #forgotemail-link:hover {
+                color: rgb(233, 201, 174);
+                }
+
+            #forgotemail-link:active {
+                color: rgb(167, 143, 124);
                 }
         </style>
 
@@ -46,9 +124,14 @@
     <body>
 
         <div id="landing_recovery1">
-            <a href=""> > Return home </a>
-            <div id="recoveryframe1">
-            </div>
+            <a id="return-home" href="Login_page.html"> < Return home </a>
+            <form id="recoveryframe1" action="" method="post" name="recovery1-form">
+                <span id="recovery-title"> Recover your account </span>
+                <label for="email-input" id="email-label"> Email </label>
+                <input type="email" id="email-input">
+                <input type="submit" value="Reset password">
+                <a href="" id="forgotemail-link"> I forgot my email </a> 
+            </form>
         </div>    
 
     </body>
