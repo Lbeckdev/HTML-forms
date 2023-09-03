@@ -17,12 +17,71 @@
         <title> Recovery page - recover email </title>
 
         <style>
+            body {
+                min-height: 100vh;
+                width: 100%;
+                margin: 0px;
+                font-family: 'Nunito Sans', sans-serif;
+                background-color: rgb(33,16,9);
+                }
+
+            #landing_recovery2 {
+                width: 100vw;
+                min-height: 100vh;
+                border: 1px solid red;
+                background-image: radial-gradient(at 10% 10%,#602E00 0%,#16002C 100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
+
+            #return-home {
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: 600;
+                }
             
+            a#return-home:link {
+                color: orange;
+                }
+
+            a#return-home:visited {
+                color: orange;
+                }
+            
+            a#return-home:focus {
+                color: rgb(255, 205, 111);
+                outline: 2px solid orange;
+                border: none;
+                }
+
+            a#return-home:hover {
+                color: rgb(154, 100, 0);
+                }
+
+            a#return-home:active {
+                color: orange;
+                }
+
+
+            #recoveryframe2 {
+                width: 540px;
+                height: 325px;
+                border-radius: 6px;
+                background-color: black;
+                }
+
         </style>
 
     </head>
 
     <body>
+        <div id="landing_recovery2">
+            <a href="" id="return-home"> < Return home </a>
+            <div id="recoveryframe2">
+            </div>
+        </div>
     </body>
     
 </html>
