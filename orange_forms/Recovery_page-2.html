@@ -34,6 +34,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                gap: 15px;
                 }
 
             #return-home {
@@ -69,7 +70,29 @@
                 width: 540px;
                 height: 325px;
                 border-radius: 6px;
-                background-color: black;
+                background-color: rgb(26,12,9);
+                border: 1px solid #7A4319;
+                display: grid;
+                grid-template-rows: 50px 50px 1fr;
+                }
+
+            #back {
+                grid-area: 1/auto/2/auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                }
+
+            #back a {
+                margin-left: 20px;
+                }
+
+            #recovery2-title {
+                grid-area: 2/auto/3/auto;
+                }
+
+            #recovery2-mainframe {
+                grid-area: 3/auto/4/auto;
                 }
 
         </style>
@@ -78,8 +101,15 @@
 
     <body>
         <div id="landing_recovery2">
-            <a href="" id="return-home"> < Return home </a>
+            <a href="Login_page.html" id="return-home"> < Return home </a>
             <div id="recoveryframe2">
+                <div id="back">
+                    <a href="Recovery_page-1.html"> < Back </a>
+                </div>
+                <div id="recovery2-title">
+                </div>
+                <div id="recovery2-mainframe">
+                </div>
             </div>
         </div>
     </body>
