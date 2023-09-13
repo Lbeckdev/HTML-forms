@@ -73,7 +73,7 @@
                 background-color: rgb(26,12,9);
                 border: 1px solid #7A4319;
                 display: grid;
-                grid-template-rows: 50px 50px 1fr;
+                grid-template-rows: 50px 50px 1fr 50px;
                 }
 
             #back {
@@ -117,10 +117,43 @@
 
             #recovery2-title {
                 grid-area: 2/auto/3/auto;
+                color: orange;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                }
+
+            #recovery2-title span {
+                font-weight: 700;
+                font-size: 23px;
                 }
 
             #recovery2-mainframe {
                 grid-area: 3/auto/4/auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+
+            #recovery2-mainframe label {
+                color: white;
+                }
+
+            #recovery2-mainframe span {
+                color: white;
+                }
+
+            #username-input {
+                width: 50%;
+                }
+
+            #recovery2-bottomframe {
+                grid-area: 4/auto/5/auto;
+                border: 2px solid red;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 }
 
         </style>
@@ -135,8 +168,16 @@
                     <a href="Recovery_page-1.html"> < Back </a>
                 </div>
                 <div id="recovery2-title">
+                    <span> Account recovery </span>
                 </div>
                 <div id="recovery2-mainframe">
+                    <label for="username-input"> Username </label>
+                    <input type="text" id="username-input">
+                    <span> Enter your username and we'll try to recover your account </span>
+                    <input type="submit" value="Show linked email"> 
+                </div>
+                <div id="recovery2-bottomframe">
+                    x
                 </div>
             </div>
         </div>
