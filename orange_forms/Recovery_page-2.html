@@ -133,28 +133,105 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: 10px;
                 }
 
             #recovery2-mainframe label {
-                color: white;
+                color: rgb(223,205,180);
+                font-weight: 600;
+                font-size: 17px;
+                margin-bottom: -5px;
                 }
 
             #recovery2-mainframe span {
-                color: white;
+                color: rgb(223,205,180);
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 13px;
                 }
 
             #username-input {
-                width: 50%;
+                width: 360px;
+                height: 37px;
+                background-color: rgb(51,30,13);
+                border: none;
+                border-radius: 4px;
+                box-sizing: border-box;
+                color: rgb(223,205,180);
                 }
 
+            #username-input:focus {
+                border: 1.3px solid orange;
+                background-color: rgb(14,9,3);
+                outline: none;
+                }
+
+            #username-input:hover {
+                border: 0.5px solid rgb(255,145,60);
+                }
+
+            #link-email_btn {
+                width: 200px;
+                height: 30px;
+                font-size: 17px;
+                font-weight: 600;
+                border-radius: 4px;
+                border: none;
+                background-image: linear-gradient(to right, rgb(168,113,40),rgb(157,50,0));
+                color: rgb(245,227,209);
+                transition-duration: 0.3s;
+                }
+                
+            #link-email_btn:hover {
+                background-image: linear-gradient(to right, rgb(252,168,58),rgb(188,39,36));
+                width: 250px;
+                cursor: pointer;
+                color: black;
+                }
+        
             #recovery2-bottomframe {
                 grid-area: 4/auto/5/auto;
-                border: 2px solid red;
                 color: white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 }
+
+            #recovery2-bottomframe span {
+                color: rgb(167,143,124);
+                font-weight: 600;
+                font-size: 14.5px;
+                }
+
+            #recovery2-bottomframe a {
+                text-decoration: none;
+                }
+
+            #recovery2-bottomframe a:link {
+                color: orange;
+                }
+
+            #recovery2-bottomframe a:visited {
+                color: orange;
+                }
+
+            #recovery2-bottomframe a:focus {
+                color: rgb(255,205,111);
+                outline: 2px solid orange;
+                border: none;
+                }
+
+            #recovery2-bottomframe a:hover {
+                color: rgb(154,100,0);
+                }
+
+            #recovery2-bottomframe a:active {
+                color: orange;
+                }
+
+
+
+
 
         </style>
 
@@ -174,10 +251,10 @@
                     <label for="username-input"> Username </label>
                     <input type="text" id="username-input">
                     <span> Enter your username and we'll try to recover your account </span>
-                    <input type="submit" value="Show linked email"> 
+                    <input type="submit" value="Show linked email" id="link-email_btn"> 
                 </div>
                 <div id="recovery2-bottomframe">
-                    x
+                    <span> Forgot username? Please <a href="Contact_page.html"> contact us </a> and we'll try to help you. </span>
                 </div>
             </div>
         </div>
