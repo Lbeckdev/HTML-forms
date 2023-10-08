@@ -236,49 +236,62 @@
                 color: orange;
                 }
 
-            @media all and (min-width: 1728px) and (min-height: 1117px) {
+            @media all and (min-width: 1350px) and (min-height: 1000px) {
                 
                 #recoveryframe2 {
-                    width: 600px;
-                    height: 350px;
+                    width: 680px;
+                    height: 430px;
+                    grid-template-rows: 50px 75px 1fr 50px ;
+                    }
+
+                #recovery2-title {
+                    align-items: center;
                     }
 
                 #recovery2-title span {
-                    font-size: 28px;
+                    font-size: 34px;
+                    }
+
+                #recovery2-mainframe {
+                    justify-content: center;
                     }
 
                 #recovery2-mainframe label {
-                    font-size: 21px;
+                    font-size: 26px;
                     }
 
                 #username-input {
-                    width: 390px;
+                    width: 490px;
+                    height: 46.5px;
+                    margin-bottom: 3px;
                     }
 
                 #recovery2-mainframe span {
-                    font-size: 15px;
+                    font-size: 20px;
+                    margin-bottom: 20px;
                     }
 
                 #link-email_btn {
-                    width: 220px;
-                    height: 33px;
-                    font-size: 18.5px;
+                    width: 265px;
+                    height: 39px;
+                    font-size: 22px;
+                    margin-bottom: 30px;
                     }
 
                 #link-email_btn:hover {
-                    width: 270px;
+                    width: 315px;
                     }
 
                 #recovery2-bottomframe span {
-                    font-size: 17px;
+                    font-size: 19px;
                     }
 
                 #back a {
-                    font-size: 18.5px;
+                    font-size: 25px;
                     }
 
                 #return-home {
-                    font-size: 20px;
+                    font-size: 26px;
                     }
             
             }
@@ -346,6 +359,16 @@
             @media all and (max-width: 600px) {
                 #recoveryframe2 {
                     width: 88%;
+                    }
+            }
+            
+            @media all and (max-width: 420px) {
+                #link-email_btn {
+                    width: 80%;
+                    }
+
+                #username-input {
+                    width: 80%;
                     }
             }
 
