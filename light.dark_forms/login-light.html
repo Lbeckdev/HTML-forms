@@ -24,8 +24,58 @@
                 min-height: 100vh;
                 width: 100vw;
                 margin: 0px;
-                background-color: black;
+                background-color: rgb(234, 234, 234);
                 border: 1px solid red;
+                }
+
+            #login-mainframe_light {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(234,234,234);
+                }
+
+            #login-mainform-light {
+                height: 560px;
+                width: 465px;
+                border: 1px solid rgb(179, 179, 179);
+                border-radius: 12px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                }
+
+            #titleframe-light {
+                grid-area: 1/1/2/2;
+                border: 1px solid black;
+                }
+
+            #emailframe-light {
+                grid-area: 2/1/3/2;
+                border: 1px solid black;
+                }
+            
+            #passwordframe-light {
+                grid-area: 3/1/4/2;
+                border: 1px solid black;
+                }
+
+            #remembermeframe-light {
+                grid-area: 4/1/5/2;
+                border: 1px solid black;
+                }
+
+            #submitframe-light {
+                grid-area: 5/1/6/2;
+                border: 1px solid black;
+                }
+
+
+            #forgotpassframe-light {
+                grid-area: 6/1/7/2;
+                border: 1px solid black;
                 }
         </style>
 
@@ -33,5 +83,17 @@
 
     <body>
 
+        <div id="login-mainframe_light">
+            <form action="" method="post" id="login-mainform-light">
+                <div id="titleframe-light"></div>
+                <div id="emailframe-light"></div>
+                <div id="passwordframe-light"></div>
+                <div id="remembermeframe-light"></div>
+                <div id="submitframe-light"></div>
+                <div id="forgotpassframe-light"></div>
+            </form>
+        </div>
+
     </body>
+
 </html>
