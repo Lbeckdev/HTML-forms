@@ -94,6 +94,9 @@
             
             #passwordframe-light {
                 grid-area: 4/1/5/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 }
 
             .input-light {
@@ -124,7 +127,56 @@
 
             #remembermeframe-light {
                 grid-area: 5/1/6/2;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                }
                 
+            #checkbox-container {
+                display: block;
+                cursor: pointer;
+                width: 74%;
+                height: 38%;
+                user-select: none;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                color: rgb(110, 110, 110);
+                }
+
+            #checkbox-container input {
+                cursor: pointer;
+                opacity: 0;
+                }
+
+            #custom-checkbox {
+                width: 17px;
+                height: 17px;
+                border: 1px solid black;
+                display: inline-block;
+                margin-left: -20px;
+                margin-right: 5px;
+                }
+
+            #checkbox-container:hover #custom-checkbox {
+                background-color: rgb(196, 196, 196);
+                }
+
+            #checkbox-container input:checked ~ #custom-checkbox:after {
+                display: block;
+                }
+
+            #custom-checkbox:after {
+                content: "";
+                width: 5px;
+                height: 12.5px;
+                border: solid rgb(44, 44, 44);
+                display: none;
+                border-width: 0px 1.5px 1.5px 0px;
+                position: relative;
+                left: 5.3px;
+                top: -0.5px;
+                transform: rotate(40deg);
                 }
 
             #submitframe-light {
@@ -162,8 +214,17 @@
                 <div id="emailframe-light">
                     <input type="email" class="input-light" placeholder="Email">
                 </div>
-                <div id="passwordframe-light"></div>
-                <div id="remembermeframe-light"></div>
+                <div id="passwordframe-light">
+                    <input type="password" class="input-light"
+                    placeholder="Password">
+                </div>
+                <div id="remembermeframe-light">
+                    <label id="checkbox-container">
+                        <input type="checkbox" checked>
+                        <div id="custom-checkbox"> </div>
+                        Remember me
+                    </label>
+                </div>
                 <div id="submitframe-light"></div>
                 <div id="forgotpassframe-light"></div>
             </form>
