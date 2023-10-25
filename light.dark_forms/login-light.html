@@ -45,7 +45,7 @@
                 border: 1px solid rgb(179, 179, 179);
                 border-radius: 12px;
                 display: grid;
-                grid-template-rows: 60px 130px 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 60px 110px 1fr 1fr 60px 1fr 1fr;
                 grid-template-columns: 1fr;
                 }
 
@@ -75,11 +75,11 @@
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
-                gap: 1.5px;
                 }
 
 
             #titleframe-light span {
+                margin-top: 20px;
                 font-size: 20px;
                 color: rgb(41, 41, 41);
                 font-weight: 500;
@@ -115,6 +115,10 @@
                 border-bottom: 1.5px solid rgb(53, 53, 53);
                 }
 
+            .input-light:hover {
+                border-bottom: 1.5px solid rgb(53,53,53);
+                }
+
             ::placeholder {
                 font-size: 17px;
                 color: rgb(110, 110, 110);
@@ -122,6 +126,10 @@
                 }
 
             .input-light:focus::placeholder {
+                color: rgb(53,53,53);
+                }
+
+            .input-light:hover::placeholder {
                 color: rgb(53,53,53);
                 }
 
@@ -152,18 +160,23 @@
             #custom-checkbox {
                 width: 17px;
                 height: 17px;
-                border: 1px solid black;
+                border: 1px solid rgb(110,110,110);
                 display: inline-block;
                 margin-left: -20px;
                 margin-right: 5px;
                 }
 
             #checkbox-container:hover #custom-checkbox {
-                background-color: rgb(196, 196, 196);
+                background-color: rgb(148, 157, 210);
                 }
 
             #checkbox-container input:checked ~ #custom-checkbox:after {
                 display: block;
+                }
+
+            #checkbox-container input:checked ~ #custom-checkbox {
+                background-color: rgb(174, 185, 255);
+                border: none;
                 }
 
             #custom-checkbox:after {
@@ -181,13 +194,31 @@
 
             #submitframe-light {
                 grid-area: 6/1/7/2;
-                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            #submitframe-light input {
+                width: 210px;
+                height: 35px;
+                border: none;
+                background-image: linear-gradient(to top right,#6A70FF,#3278FF);
+                border-radius: 5px;
+                font-family: "elza-text", sans-serif;
+                font-size: 16px;
+                color: #FEFEFE;
+                transition-duration: 0.2s;
+                }
+
+            #submitframe-light input:hover {
+                background-image: linear-gradient(to top right, #4246a5,#18459e);
+                cursor: pointer;
                 }
 
 
             #forgotpassframe-light {
                 grid-area: 7/1/8/2;
-               
                 }
 
             @media screen and (max-width: 500px) {
@@ -225,7 +256,9 @@
                         Remember me
                     </label>
                 </div>
-                <div id="submitframe-light"></div>
+                <div id="submitframe-light">
+                    <input type="submit" value="Sign in">    
+                </div>
                 <div id="forgotpassframe-light"></div>
             </form>
         </div>
