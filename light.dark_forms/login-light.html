@@ -26,7 +26,6 @@
                 width: 100vw;
                 margin: 0px;
                 background-color: rgb(234, 234, 234);
-                border: 1px solid red;
                 font-family: "elza-text", sans-serif;
                 }
 
@@ -208,7 +207,6 @@
                 font-family: "elza-text", sans-serif;
                 font-size: 16px;
                 color: #FEFEFE;
-                transition-duration: 0.2s;
                 }
 
             #submitframe-light input:hover {
@@ -219,6 +217,26 @@
 
             #forgotpassframe-light {
                 grid-area: 7/1/8/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+            #forgotpassframe-light a {
+                text-decoration: none;
+                font-size: 14px;
+                }
+            #forgotpassframe-light a:link {
+                color: rgb(110,110,110);
+                }
+            #forgotpassframe-light a:visited {
+                color: rgb(110,110,110);
+                }
+            #forgotpassframe-light a:hover {
+                color: rgb(0, 0, 0);
+                }
+            #forgotpassframe-light a:active {
+                color: rgb(0,0,0);
                 }
 
             @media screen and (max-width: 500px) {
@@ -259,7 +277,9 @@
                 <div id="submitframe-light">
                     <input type="submit" value="Sign in">    
                 </div>
-                <div id="forgotpassframe-light"></div>
+                <div id="forgotpassframe-light">
+                    <a href=""> I forgot my password </a>
+                </div>
             </form>
         </div>
 
