@@ -26,10 +26,144 @@
                 width: 100vw;
                 margin: 0px;
                 background-color: #1C1D21;
+                font-family: "elza-text", sans-serif;
+                }
+
+            #login-mainframe_dark {
+                border: 2px solid white;
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            #login-mainform-dark {
+                border: 1px solid #4D4D4D;
+                height: 560px;
+                width: 465px;
+                border-radius: 12px;
+                display: grid;
+                grid-template-rows: 60px 110px 1fr 1fr 60px 1fr 1fr;
+                grid-template-columns: 1fr;
+                }
+
+            #iconframe-top_dark {
+                grid-area: 1/1/2/2;
+                display: flex;
+                }
+
+            .square-frame {
+                height: 100%;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                }
+
+            .square-icon {
+                width: 30px;
+                height: 30px;
+                border-radius: 4px;
+                background-image: linear-gradient(to bottom,#969AFF,#305DFB);
+                margin-left: 14px;
+                }
+
+            #titleframe-dark {
+                grid-area: 2/1/3/2;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                }
+
+            #titleframe-dark span {
+                font-size: 20px;
+                color: rgb(214, 214, 214);
+                font-weight: 500;
+                margin-top: 20px;
+                }
+
+            #emailframe-dark {
+                grid-area: 3/1/4/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+            #passwordframe-dark {
+                grid-area: 4/1/5/2;
+                border: 1px solid red;
+                }
+
+            .input-dark {
+                width: 74%;
+                height: 38%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #A9A9A9;
+                font-size: 17px;
+                color: rgb(255, 255, 255);
+                font-family: "elza-text", sans-serif;
+                }
+
+            .input-dark:focus {
+                outline: none;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                }
+
+            ::placeholder {
+                font-size: 17px;
+                font-family: "elza-text", sans-serif;
+                color: #A9A9A9;
+                }
+
+            .input-dark:focus::placeholder {
+                color: white;
+                }
+
+            #remembermeframe-dark {
+                grid-area: 5/1/6/2;
+                border: 1px solid red;
+                }
+
+            #submitframe-dark {
+                grid-area: 6/1/7/2;
+                border: 1px solid red;
+                }
+
+            #forgotpassframe-dark {
+                grid-area: 7/1/8/2;
+                border: 1px solid yellow;
                 }
 
         </style>
+
     </head>
+
     <body>
+
+        <div id="login-mainframe_dark"> 
+            <form action="" target="_self" method="post" id="login-mainform-dark">
+                <div id="iconframe-top_dark">
+                    <div class="square-frame">
+                        <div class="square-icon"> </div>
+                    </div>
+                </div>
+                <div id="titleframe-dark">
+                    <span> Sign in to your account </span>
+                </div>
+                <div id="emailframe-dark">
+                    <input type="email" placeholder="Email" class="input-dark">
+                </div>
+                <div id="passwordframe-dark"> </div>
+                <div id="remembermeframe-dark"> </div>
+                <div id="submitframe-dark"> </div>
+                <div id="forgotpassframe-dark"> </div>
+            </form>
+        </div>
+
     </body>
+
+
+
+
 </html>
