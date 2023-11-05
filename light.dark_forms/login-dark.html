@@ -18,10 +18,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                overflow-x: hidden;
                 }
 
             body {
-                border: 2px solid red;
                 min-height: 100vh;
                 width: 100vw;
                 margin: 0px;
@@ -30,7 +30,7 @@
                 }
 
             #login-mainframe_dark {
-                border: 2px solid white;
+                
                 height: 100vh;
                 width: 100vw;
                 display: flex;
@@ -91,7 +91,6 @@
 
             #passwordframe-dark {
                 grid-area: 4/1/5/2;
-                border: 1px solid red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -125,7 +124,6 @@
 
             #remembermeframe-dark {
                 grid-area: 5/1/6/2;
-                border: 1px solid white;
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
@@ -136,15 +134,51 @@
                 cursor: pointer;
                 width: 74%;
                 height: 38%;
-                border: 1px solid red;
                 color: #A9A9A9;
+                user-select: none;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
                 }
 
             #custom-checkbox_dark {
                 display: inline-block;
-                width: 10px;
-                height: 10px;
-                border: 2px solid white;
+                width: 17px;
+                height: 17px;
+                border: 1px solid #A9A9A9;
+                margin-left: -20px;
+                margin-right: 5px;
+                }
+
+            #checkbox-container_dark input {
+                cursor: pointer;
+                opacity: 0;
+                }
+
+            #checkbox-container_dark:hover #custom-checkbox_dark {
+                background-color: rgb(61, 67, 100);
+                }
+
+            #custom-checkbox_dark::after {
+                content: "";
+                width: 5px;
+                height: 12.5px;
+                border: solid white;
+                position: relative;
+                left: 5.3px;
+                top: -0.5px;
+                display: none;
+                border-width: 0px 1.5px 1.5px 0px;
+                transform: rotate(40deg);
+                }
+
+            #checkbox-container_dark input:checked ~ #custom-checkbox_dark::after {
+                display: block;
+                }
+
+            #checkbox-container_dark input:checked ~ #custom-checkbox_dark {
+                background-color: rgb(61,67,100);
+                border: none;
                 }
 
             #submitframe-dark {
@@ -181,8 +215,8 @@
                 </div>
                 <div id="remembermeframe-dark"> 
                     <label id="checkbox-container_dark">
-                        <div id="custom-checkbox_dark"> </div>
                         <input type="checkbox" checked>
+                        <div id="custom-checkbox_dark"> </div>
                         Remember me
                     </label>
                 </div>
