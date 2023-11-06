@@ -183,13 +183,65 @@
 
             #submitframe-dark {
                 grid-area: 6/1/7/2;
-                border: 1px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            #submitframe-dark input {
+                width: 210px;
+                height: 35px;
+                background-image: linear-gradient(to top right,#6A70FF,#3278FF);
+                border: none;
+                border-radius: 5px;
+                font-family: "elza-text", sans-serif;
+                font-size: 16px;
+                color: #FEFEFE;
+                padding-bottom: 2.25px;
+                }
+            
+
+            #submitframe-dark input:hover {
+                background-image: linear-gradient(to top right, #4246a5,#18459e);
                 }
 
             #forgotpassframe-dark {
                 grid-area: 7/1/8/2;
                 border: 1px solid yellow;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 }
+
+            #forgotpassframe-dark a {
+                text-decoration: none;
+                font-size: 14px;
+                }
+
+            #forgotpassframe-dark a:link {
+                color: #A9A9A9;
+                }
+
+            #forgotpassframe-dark a:visited {
+                color: #A9A9A9;
+                }
+
+            #forgotpassframe-dark a:focus-visible {
+                color: white;
+                outline: none;
+                border-bottom: 1px solid white;
+                }
+
+
+            #forgotpassframe-dark a:hover {
+                color: white;
+                }
+
+            #forgotpassframe-dark a:active {
+                color: #6a6a6a;
+                }
+            
+
 
         </style>
 
@@ -220,8 +272,12 @@
                         Remember me
                     </label>
                 </div>
-                <div id="submitframe-dark"> </div>
-                <div id="forgotpassframe-dark"> </div>
+                <div id="submitframe-dark"> 
+                    <input type="submit" value="Sign in">
+                </div>
+                <div id="forgotpassframe-dark"> 
+                    <a href=""> I forgot my password </a>
+                </div>
             </form>
         </div>
 
