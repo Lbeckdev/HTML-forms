@@ -163,6 +163,16 @@
                 margin-right: 5px;
                 }
 
+            #checkbox-container input:focus + #custom-checkbox {
+                border: 1.5px solid black;
+                }
+
+            #checkbox-container input:focus:checked + #custom-checkbox {
+                border: 1.5px solid black;
+                }
+
+            
+
             #checkbox-container:hover #custom-checkbox {
                 background-color: rgb(148, 157, 210);
                 }
@@ -213,6 +223,11 @@
                 cursor: pointer;
                 }
 
+            #submitframe-light input:focus-visible {
+                border: 2px solid rgb(0, 0, 0);
+                outline: none;
+                }
+
 
             #forgotpassframe-light {
                 grid-area: 7/1/8/2;
@@ -231,6 +246,14 @@
             #forgotpassframe-light a:visited {
                 color: rgb(110,110,110);
                 }
+
+            #forgotpassframe-light a:focus-visible {
+                border-bottom: 1px solid black;
+                outline: none;
+                color: black;
+                font-weight: 500;
+                }    
+            
             #forgotpassframe-light a:hover {
                 color: rgb(0, 0, 0);
                 }
@@ -250,7 +273,7 @@
     <body>
 
         <div id="login-mainframe_light">
-            <form action="" method="post" id="login-mainform-light">
+            <form action="" target="_self" method="post" id="login-mainform-light">
                 <div id="iconframe-top_light">
                     <div class="square-frame">
                         <div class="square-icon"> </div>

@@ -107,15 +107,23 @@
                 font-family: "elza-text", sans-serif;
                 }
 
+            .input-dark:hover {
+                border-bottom: 1.5px solid white;
+                }
+
             .input-dark:focus {
                 outline: none;
-                border-bottom: 1px solid rgb(255, 255, 255);
+                border-bottom: 1.5px solid rgb(255, 255, 255);
                 }
 
             ::placeholder {
                 font-size: 17px;
                 font-family: "elza-text", sans-serif;
                 color: #A9A9A9;
+                }
+
+            .input-dark:hover::placeholder {
+                color: white;
                 }
 
             .input-dark:focus::placeholder {
@@ -172,8 +180,16 @@
                 transform: rotate(40deg);
                 }
 
+            #checkbox-container_dark input:focus + #custom-checkbox_dark {
+                border: 2px solid white;
+                }
+
             #checkbox-container_dark input:checked ~ #custom-checkbox_dark::after {
                 display: block;
+                }
+
+            #checkbox-container_dark input:focus:checked + #custom-checkbox_dark {
+                border: 2px solid white;
                 }
 
             #checkbox-container_dark input:checked ~ #custom-checkbox_dark {
@@ -205,9 +221,13 @@
                 background-image: linear-gradient(to top right, #4246a5,#18459e);
                 }
 
+            #submitframe-dark input:focus-visible {
+                border: 2px solid white;
+                outline: none;
+                }
+
             #forgotpassframe-dark {
                 grid-area: 7/1/8/2;
-                border: 1px solid yellow;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -230,6 +250,7 @@
                 color: white;
                 outline: none;
                 border-bottom: 1px solid white;
+                font-weight: 500;
                 }
 
 
