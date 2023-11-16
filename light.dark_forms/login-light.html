@@ -28,13 +28,39 @@
                 font-family: "elza-text", sans-serif;
                 }
 
-            #login-mainframe_light {
-                display: flex;
+            #mainframe-light {
+                display: grid;
+                grid-template-rows: 50px 1fr;
+                grid-template-columns: 1fr;
                 width: 100vw;
                 height: 100vh;
-                justify-content: center;
-                align-items: center;
                 background-color: rgb(234,234,234);
+                }
+
+            #topnav-light {
+                grid-area: 1/1/2/2;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: row;
+                }
+
+            #topnav-light a img {
+                margin-right: 6px;
+                margin-top: 2px;
+                transition-duration: 0.3s;
+                }
+
+            #topnav-light a:hover img {
+                transform: rotate(20deg);
+                opacity: 80%;
+                }
+
+            #login-mainframe_light {
+                grid-area: 2/1/3/2;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
                 }
 
             #login-mainform-light {
@@ -271,40 +297,45 @@
     </head>
 
     <body>
-
-        <div id="login-mainframe_light">
-            <form action="" target="_self" method="post" id="login-mainform-light">
-                <div id="iconframe-top_light">
-                    <div class="square-frame">
-                        <div class="square-icon"> </div>
+        <div id="mainframe-light">
+            <div id="topnav-light"> 
+                <a href="login-dark.html">
+                    <img src="sun_vector.svg" alt="Icon of sun in vector graphics, light mode" width="60px" height="60px">
+                </a>    
+            </div>
+            <div id="login-mainframe_light">
+                <form action="" target="_self" method="post" id="login-mainform-light">
+                    <div id="iconframe-top_light">
+                        <div class="square-frame">
+                            <div class="square-icon"> </div>
+                        </div>
                     </div>
-                </div>
-                <div id="titleframe-light">
-                    <span> Sign in to your account </span>
-                </div>
-                <div id="emailframe-light">
-                    <input type="email" class="input-light" placeholder="Email">
-                </div>
-                <div id="passwordframe-light">
-                    <input type="password" class="input-light"
-                    placeholder="Password">
-                </div>
-                <div id="remembermeframe-light">
-                    <label id="checkbox-container">
-                        <input type="checkbox" checked>
-                        <div id="custom-checkbox"> </div>
-                        Remember me
-                    </label>
-                </div>
-                <div id="submitframe-light">
-                    <input type="submit" value="Sign in">    
-                </div>
-                <div id="forgotpassframe-light">
-                    <a href=""> I forgot my password </a>
-                </div>
-            </form>
+                    <div id="titleframe-light">
+                        <span> Sign in to your account </span>
+                    </div>
+                    <div id="emailframe-light">
+                        <input type="email" class="input-light" placeholder="Email">
+                    </div>
+                    <div id="passwordframe-light">
+                        <input type="password" class="input-light"
+                        placeholder="Password">
+                    </div>
+                    <div id="remembermeframe-light">
+                        <label id="checkbox-container">
+                            <input type="checkbox" checked>
+                            <div id="custom-checkbox"> </div>
+                            Remember me
+                        </label>
+                    </div>
+                    <div id="submitframe-light">
+                        <input type="submit" value="Sign in">    
+                    </div>
+                    <div id="forgotpassframe-light">
+                        <a href=""> I forgot my password </a>
+                    </div>
+                </form>
+            </div>
         </div>
-
     </body>
 
 </html>

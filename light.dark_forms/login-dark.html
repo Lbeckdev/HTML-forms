@@ -29,13 +29,32 @@
                 font-family: "elza-text", sans-serif;
                 }
 
-            #login-mainframe_dark {
-                
+            #mainframe_dark {
                 height: 100vh;
                 width: 100vw;
+                display: grid;
+                grid-template-rows: 50px 1fr;
+                grid-template-columns: 1fr;
+                }
+
+            #topnav-dark {
+                grid-area: 1/1/2/2;
                 display: flex;
                 align-items: center;
+                justify-content: flex-end;
+                flex-direction: row;
+                }
+
+            #topnav-dark a:hover img {
+                opacity: 50%;
+                }
+
+            #login-mainframe_dark {
+                grid-area: 2/1/3/2;
+                display: flex;
+                align-items: flex-start;
                 justify-content: center;
+                
                 }
 
             #login-mainform-dark {
@@ -269,39 +288,44 @@
     </head>
 
     <body>
-
-        <div id="login-mainframe_dark"> 
-            <form action="" target="_self" method="post" id="login-mainform-dark">
-                <div id="iconframe-top_dark">
-                    <div class="square-frame">
-                        <div class="square-icon"> </div>
+        <div id="mainframe_dark">
+            <div id="topnav-dark">
+                <a href="login-light.html">
+                    <img src="moon_vector.svg" alt="Icon of moon in vector graphics, dark mode" width="70px" height="70px">
+                </a> 
+            </div>
+            <div id="login-mainframe_dark"> 
+                <form action="" target="_self" method="post" id="login-mainform-dark">
+                    <div id="iconframe-top_dark">
+                        <div class="square-frame">
+                            <div class="square-icon"> </div>
+                        </div>
                     </div>
-                </div>
-                <div id="titleframe-dark">
-                    <span> Sign in to your account </span>
-                </div>
-                <div id="emailframe-dark">
-                    <input type="email" placeholder="Email" class="input-dark">
-                </div>
-                <div id="passwordframe-dark">
-                    <input type="password" placeholder="Password" class="input-dark">
-                </div>
-                <div id="remembermeframe-dark"> 
-                    <label id="checkbox-container_dark">
-                        <input type="checkbox" checked>
-                        <div id="custom-checkbox_dark"> </div>
-                        Remember me
-                    </label>
-                </div>
-                <div id="submitframe-dark"> 
-                    <input type="submit" value="Sign in">
-                </div>
-                <div id="forgotpassframe-dark"> 
-                    <a href=""> I forgot my password </a>
-                </div>
-            </form>
+                    <div id="titleframe-dark">
+                        <span> Sign in to your account </span>
+                    </div>
+                    <div id="emailframe-dark">
+                        <input type="email" placeholder="Email" class="input-dark">
+                    </div>
+                    <div id="passwordframe-dark">
+                        <input type="password" placeholder="Password" class="input-dark">
+                    </div>
+                    <div id="remembermeframe-dark"> 
+                        <label id="checkbox-container_dark">
+                            <input type="checkbox" checked>
+                            <div id="custom-checkbox_dark"> </div>
+                            Remember me
+                        </label>
+                    </div>
+                    <div id="submitframe-dark"> 
+                        <input type="submit" value="Sign in">
+                    </div>
+                    <div id="forgotpassframe-dark"> 
+                        <a href=""> I forgot my password </a>
+                    </div>
+                </form>
+            </div>
         </div>
-
     </body>
 
 
