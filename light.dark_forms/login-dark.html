@@ -52,7 +52,7 @@
             #login-mainframe_dark {
                 grid-area: 2/1/3/2;
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: center;
                 
                 }
@@ -295,7 +295,7 @@
                 </a> 
             </div>
             <div id="login-mainframe_dark"> 
-                <form action="" target="_self" method="post" id="login-mainform-dark">
+                <form action="" target="_self" method="post" id="login-mainform-dark" name="user_login-form(dark)">
                     <div id="iconframe-top_dark">
                         <div class="square-frame">
                             <div class="square-icon"> </div>
@@ -305,14 +305,14 @@
                         <span> Sign in to your account </span>
                     </div>
                     <div id="emailframe-dark">
-                        <input type="email" placeholder="Email" class="input-dark">
+                        <input type="email" placeholder="Email" class="input-dark" id="UserInput_email(dark)">
                     </div>
                     <div id="passwordframe-dark">
-                        <input type="password" placeholder="Password" class="input-dark">
+                        <input type="password" placeholder="Password" class="input-dark" id="UserInput_pass(dark)">
                     </div>
                     <div id="remembermeframe-dark"> 
                         <label id="checkbox-container_dark">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" checked id="RememberMe_dark">
                             <div id="custom-checkbox_dark"> </div>
                             Remember me
                         </label>
