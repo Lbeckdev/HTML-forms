@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Account recovery </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Account recovery, reset password, contact us for more help. Light theme.">
+        <meta name="author" content="Lukas Beck">
+
+        <link rel="stylesheet" href="https://use.typekit.net/kvb5roq.css">
+
+        <style>
+
+            html {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            body {
+                margin: 0px;
+                min-height: 100vh;
+                width: 100vw;
+                font-family: 'elza-text', sans-serif;
+                background-color: rgb(234,234,234);
+                }
+
+            #RecoveryMainframe-light {
+                height: 100vh;
+                width: 100vw;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 50px 1fr;
+                background-color: rgb(234,234,234);
+                }
+
+            #RecoveryTopnav-light {
+                grid-area: 1/1/2/2;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: row;
+                }
+
+            #RecoveryContentframe-light {
+                grid-area: 2/1/3/2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            #AccountRecovery_form-light {
+                border: 1px solid rgb(179,179,179);
+                width: 600px;
+                height: 400px;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                display: grid;
+                grid-template-columns: 1fr;
+                }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="RecoveryMainframe-light">
+            <div id="RecoveryTopnav-light">
+                <a href="">
+                    <img src="sun_vector.svg" alt="Icon of sun in vector graphics, light mode" width="60px" height="60px">
+                </a>
+            </div>
+            <div id="RecoveryContentframe-light">
+                <form action="" method="post" target="_self" id="AccountRecovery_form-light" name="user_AccountRecovery(light)">
+                </form>
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>
