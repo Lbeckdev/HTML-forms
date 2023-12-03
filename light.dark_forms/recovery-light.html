@@ -60,6 +60,27 @@
                 border-radius: 12px;
                 display: grid;
                 grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,1fr);
+                }
+
+            #titleframeRecovery-light {
+                grid-area: 1/1/2/2;
+                border: 1px solid red;
+                }
+
+            #emailframeRecovery-light {
+                grid-area: 2/1/3/2;
+                border: 1px solid red;
+                }
+
+            #submitframeRecovery-light {
+                grid-area: 3/1/4/2;
+                border: 1px solid red;
+                }
+
+            #contactframeRecovery-light {
+                grid-area: 4/1/5/2;
+                border: 1px solid red;
                 }
 
         </style>
@@ -76,6 +97,10 @@
             </div>
             <div id="RecoveryContentframe-light">
                 <form action="" method="post" target="_self" id="AccountRecovery_form-light" name="user_AccountRecovery(light)">
+                    <div id="titleframeRecovery-light"></div>
+                    <div id="emailframeRecovery-light"> </div>
+                    <div id="submitframeRecovery-light"> </div>
+                    <div id="contactframeRecovery-light"> </div>
                 </form>
             </div>
         </div>
