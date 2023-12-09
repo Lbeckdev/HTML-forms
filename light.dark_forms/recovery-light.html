@@ -65,18 +65,22 @@
 
             #titleframeRecovery-light {
                 grid-area: 1/1/2/2;
-                font-size: 20px;
-                font-weight: 500;
-                color: rgb(41,41,41);
+                font-size: 21px;
+                color: rgb(80,80,80);
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: center;
+                }
+
+            #titleframeRecovery-light span {
+                font-weight: 600;
+                margin-bottom: 5px;
                 }
 
             #emailframeRecovery-light {
                 grid-area: 2/1/3/2;
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: center;
                 }
 
@@ -87,6 +91,7 @@
                 width: 350px;
                 height: 25px;
                 font-size: 17px;
+                margin-bottom: 5px;
                 }
 
             #AccountRecovery-emailInput_light:focus {
@@ -115,7 +120,7 @@
             #submitframeRecovery-light {
                 grid-area: 3/1/4/2;
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: center;
                 }
 
@@ -130,6 +135,12 @@
                 font-family: "elza-text", sans-serif;
                 padding-bottom: 3px;
                 font-weight: 500;
+                margin-bottom: 10px;
+                }
+
+            #submitframeRecovery-light input:hover {
+                background-image: linear-gradient(to top right,#4246a5,#18459e);
+                cursor: pointer;
                 }
 
             #contactframeRecovery-light {
@@ -151,7 +162,21 @@
 
             #contactframeRecovery-light a:visited {
                 color: rgb(110,110,110);
+                }
 
+            #contactframeRecovery-light a:focus-visible {
+                border-bottom: 1px solid black;
+                outline: none;
+                color: black;
+                font-weight: 500;
+                }
+
+            #contactframeRecovery-light a:hover {
+                color: black;
+                }
+            
+            #contactframeRecovery-light a:active {
+                color: black;
                 }
 
         </style>
@@ -169,7 +194,7 @@
             <div id="RecoveryContentframe-light">
                 <form action="" method="post" target="_self" id="AccountRecovery_form-light" name="user_AccountRecovery-LIGHT">
                     <div id="titleframeRecovery-light">
-                        Recover your account
+                        <span> Recover your account </span>
                     </div>
                     <div id="emailframeRecovery-light"> 
                         <input type="email" id="AccountRecovery-emailInput_light" placeholder="Email" name="UserEmail_Recovery">

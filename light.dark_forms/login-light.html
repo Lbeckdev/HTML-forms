@@ -103,9 +103,9 @@
 
             #titleframe-light span {
                 margin-top: 20px;
-                font-size: 20px;
-                color: rgb(41, 41, 41);
-                font-weight: 500;
+                font-size: 21px;
+                color: rgb(80, 80, 80);
+                font-weight: 600;
                 }
 
             #emailframe-light {
@@ -242,16 +242,18 @@
                 font-size: 16px;
                 color: #FEFEFE;
                 padding-bottom: 2.25px;
+                font-weight: 500;
+                }
+
+            #submitframe-light input:focus-visible {
+                border: 2px solid rgb(249, 148, 15);
+                outline: none;
+                background-image: linear-gradient(to top right, #4246a5,#18459e);
                 }
 
             #submitframe-light input:hover {
                 background-image: linear-gradient(to top right, #4246a5,#18459e);
                 cursor: pointer;
-                }
-
-            #submitframe-light input:focus-visible {
-                border: 2px solid rgb(0, 0, 0);
-                outline: none;
                 }
 
 
@@ -367,7 +369,7 @@
                         <input type="submit" value="Sign in">    
                     </div>
                     <div id="forgotpassframe-light">
-                        <a href=""> I forgot my password </a>
+                        <a href="recovery-light.html"> I forgot my password </a>
                     </div>
                 </form>
             </div>
